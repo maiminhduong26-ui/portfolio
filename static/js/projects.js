@@ -1,7 +1,7 @@
 window.PROJECTS = [
   {
     id: "rooftop",
-    number: "06",
+    number: "02",
     title: "Chênh Vênh Rooftop",
     period: "02/2026 — 08/2026",
     eyebrow: "Leader Marketing",
