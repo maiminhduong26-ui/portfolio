@@ -421,6 +421,9 @@ window.PROJECTS = [
     eyebrow: "Team Leader",
     category: "Circular Economy · Sustainable Product · Agritourism",
     year: "10/2026",
+    cover: "static/images-videos/corness-logo.png",
+    coverPosition: "50% 50%",
+    heroImage: "static/images-videos/corness-logo.png",
     showOnHome: false,
     tags: ["Circular Economy", "Eco-product", "Agritourism", "AI"],
 
