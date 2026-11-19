@@ -1393,7 +1393,8 @@ button {
 }
 
 .about-social-preview-tiktok {
-  min-height: 640px;
+  height: 610px;
+  min-height: 0;
   display: flex;
   justify-content: center;
 }
@@ -1427,7 +1428,8 @@ button {
   }
 
   .about-social-preview-tiktok {
-    min-height: 600px;
+    height: 610px;
+    min-height: 0;
   }
 }
 
