@@ -380,6 +380,16 @@ function renderProjectCards() {
   const experienceShowcase = document.querySelector(".experience-showcase");
   if (experienceShowcase) {
     experienceShowcase.append(...grid.querySelectorAll(":scope > .project-preview"));
+
+    const projectCards = [...experienceShowcase.querySelectorAll(":scope > .project-preview")];
+    const startMonth = (card) => {
+      const match = card.querySelector(".experience-date")?.textContent.match(/(\d{1,2})\/(\d{4})/);
+      return match ? Number(match[2]) * 12 + Number(match[1]) : 0;
+    };
+
+    projectCards
+      .sort((left, right) => startMonth(right) - startMonth(left))
+      .forEach((card) => experienceShowcase.append(card));
   }
 }
 
