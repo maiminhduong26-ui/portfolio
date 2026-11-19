@@ -1382,7 +1382,7 @@ button {
 }
 
 .about-social-preview-youtube {
-  height: 610px;
+  height: 458px;
   aspect-ratio: auto;
 }
 
@@ -1394,7 +1394,7 @@ button {
 }
 
 .about-social-preview-tiktok {
-  height: 610px;
+  height: 458px;
   min-height: 0;
   display: flex;
   justify-content: center;
@@ -1429,7 +1429,7 @@ button {
   }
 
   .about-social-preview-tiktok {
-    height: 610px;
+    height: 458px;
     min-height: 0;
   }
 }
