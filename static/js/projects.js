@@ -424,6 +424,8 @@ window.PROJECTS = [
     cover: "static/images-videos/corness-logo.png",
     coverPosition: "50% 50%",
     heroImage: "static/images-videos/corness-logo.png",
+    coverFit: "contain",
+    coverBackground: "#ffffff",
     showOnHome: false,
     tags: ["Circular Economy", "Eco-product", "Agritourism", "AI"],
 
