@@ -345,6 +345,7 @@ function renderProjectCards() {
                 ${escapeHTML(project.title)}
               </h3>
 
+              ${project.period ? `<p class="experience-date">${escapeHTML(project.period)}</p>` : ""}
 
               <p>
                 ${escapeHTML(
