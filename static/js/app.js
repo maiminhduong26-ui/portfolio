@@ -1165,6 +1165,38 @@ function renderProjectPage() {
 
 
       ${
+        project.pressArticle
+          ? `
+            <section class="case-section press-section reveal">
+              <div class="container case-grid">
+                <div class="press-heading">
+                  <p class="case-label">Press / HUTECH</p>
+                  <h2 class="case-title">Bài viết<br>xác thực</h2>
+                  <p class="press-intro">Thông tin về dự án CORNESS và giải thưởng quốc tế được đăng tải trên website chính thức của HUTECH.</p>
+                </div>
+                <a class="press-preview" href="${safeUrl(project.pressArticle.url)}" target="_blank" rel="noopener noreferrer" aria-label="Đọc bài viết HUTECH: ${escapeHTML(project.pressArticle.title)}">
+                  <div class="press-preview-image">
+                    <img src="${safeUrl(project.pressArticle.image)}" alt="Đội CORNESS giành Gold Award tại GLOBAL UNIFORCE 2026" loading="lazy" decoding="async">
+                    <span class="press-preview-mark">HUTECH</span>
+                  </div>
+                  <div class="press-preview-body">
+                    <div class="press-preview-meta">
+                      <span>${escapeHTML(project.pressArticle.source)}</span>
+                      <time>${escapeHTML(project.pressArticle.date)}</time>
+                    </div>
+                    <h3>${escapeHTML(project.pressArticle.title)}</h3>
+                    <p>${escapeHTML(project.pressArticle.excerpt)}</p>
+                    <span class="press-preview-link">Đọc bài viết trên HUTECH <i data-lucide="arrow-up-right" aria-hidden="true"></i></span>
+                  </div>
+                </a>
+              </div>
+            </section>
+          `
+          : ""
+      }
+
+
+      ${
         project.links && project.links.length
           ? `
 
