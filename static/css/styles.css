@@ -1415,6 +1415,12 @@ button {
   line-height: 1.7;
 }
 
+@media (max-width: 1200px) {
+  .about-social-list {
+    grid-template-columns: 1fr;
+  }
+}
+
 @media (max-width: 820px) {
   .about-social-heading {
     grid-template-columns: 1fr;
