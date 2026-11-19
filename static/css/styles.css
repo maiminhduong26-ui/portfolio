@@ -1382,7 +1382,8 @@ button {
 }
 
 .about-social-preview-youtube {
-  aspect-ratio: 16 / 9;
+  height: 610px;
+  aspect-ratio: auto;
 }
 
 .about-social-preview-youtube iframe {
