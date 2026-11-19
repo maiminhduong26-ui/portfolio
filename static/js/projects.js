@@ -3,6 +3,7 @@ window.PROJECTS = [
     id: "rooftop",
     number: "06",
     title: "Chênh Vênh Rooftop",
+    period: "02/2026 — 08/2026",
     eyebrow: "Leader Marketing",
     category: "Marketing · Branding · Social Media",
     tags: ["Brand Strategy", "Content", "Social Media"],
