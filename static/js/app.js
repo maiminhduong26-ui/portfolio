@@ -1125,7 +1125,7 @@ function renderProjectPage() {
                     alt="${escapeHTML(project.title)}"
                     decoding="async"
                     fetchpriority="high"
-                    style="object-position: ${escapeHTML(project.coverPosition || "50% 50%")};"
+                    style="object-fit: ${escapeHTML(project.coverFit || "cover")}; object-position: ${escapeHTML(project.coverPosition || "50% 50%")}; background-color: ${escapeHTML(project.coverBackground || "transparent")};"
                   >`
                 : `<div class="case-hero-art case-hero-art-${escapeHTML(project.id)}" role="img" aria-label="${escapeHTML(project.title)}">
                     <span>${escapeHTML(project.eyebrow || "Case Study")}</span>
