@@ -1279,17 +1279,29 @@ button {
 }
 
 .about-social {
-  margin-top: 54px;
-  padding: 28px;
-  background: var(--surface);
-  border: 1px solid var(--border);
+  width: 100%;
+  margin-top: 72px;
+  padding-top: 34px;
+  border-top: 1px solid var(--border);
+}
+
+.about-social-heading {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  align-items: end;
+  gap: 12px 36px;
+}
+
+.about-social-heading .section-kicker {
+  grid-column: 1 / -1;
+  margin: 0;
 }
 
 .about-social-heading h3 {
-  margin: 10px 0 12px;
+  margin: 0;
   color: var(--navy);
   font-family: "Playfair Display", serif;
-  font-size: clamp(28px, 3vw, 38px);
+  font-size: clamp(30px, 4vw, 44px);
   font-weight: 600;
   line-height: 1.12;
 }
@@ -1299,36 +1311,35 @@ button {
 }
 
 .about-social-intro {
-  max-width: 540px;
+  max-width: 520px;
   margin: 0;
   color: var(--muted);
   font-size: 13px;
-  line-height: 1.7;
+  line-height: 1.75;
 }
 
 .about-social-list {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 14px;
-  margin-top: 26px;
+  gap: 22px;
+  margin-top: 30px;
+  align-items: start;
 }
 
-.about-social-card {
-  display: flex;
-  min-height: 190px;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 20px;
+.about-social-panel {
+  min-width: 0;
+  padding: 18px;
   border: 1px solid var(--border);
-  color: var(--navy);
-  text-decoration: none;
-  transition: border-color 0.25s ease, transform 0.25s ease, background 0.25s ease;
+  background: var(--surface);
 }
 
-.about-social-card:hover {
-  transform: translateY(-3px);
-  border-color: var(--navy);
-  background: var(--bg);
+.about-social-panel-heading {
+  display: flex;
+  min-height: 56px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 16px;
 }
 
 .about-social-platform {
@@ -1339,29 +1350,24 @@ button {
   text-transform: uppercase;
 }
 
-.about-social-card strong {
-  margin-top: 16px;
+.about-social-panel-heading h4 {
+  margin: 5px 0 0;
+  color: var(--navy);
   font-family: "Playfair Display", serif;
-  font-size: 22px;
+  font-size: 21px;
   font-weight: 600;
-}
-
-.about-social-description {
-  margin-top: 8px;
-  color: var(--muted);
-  font-size: 12px;
-  line-height: 1.65;
 }
 
 .about-social-link {
   display: inline-flex;
+  flex: 0 0 auto;
   align-items: center;
-  gap: 8px;
-  margin-top: auto;
-  padding-top: 18px;
-  font-size: 10px;
+  gap: 7px;
+  color: var(--navy);
+  font-size: 9px;
   font-weight: 700;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.09em;
+  text-decoration: none;
   text-transform: uppercase;
 }
 
@@ -1370,17 +1376,76 @@ button {
   height: 14px;
 }
 
-@media (max-width: 520px) {
-  .about-social {
-    padding: 22px 18px;
+.about-social-preview {
+  overflow: hidden;
+  border: 1px solid var(--border);
+  background: var(--bg);
+}
+
+.about-social-preview-youtube {
+  aspect-ratio: 16 / 9;
+}
+
+.about-social-preview-youtube iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.about-social-preview-tiktok {
+  min-height: 640px;
+  display: flex;
+  justify-content: center;
+}
+
+.about-social-preview-tiktok .tiktok-embed {
+  width: 100%;
+  margin: 0 !important;
+}
+
+.about-social-preview-tiktok iframe {
+  max-width: 100% !important;
+}
+
+.about-social-description {
+  margin: 14px 0 2px;
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.7;
+}
+
+@media (max-width: 820px) {
+  .about-social-heading {
+    grid-template-columns: 1fr;
+    gap: 14px;
   }
 
   .about-social-list {
     grid-template-columns: 1fr;
   }
 
-  .about-social-card {
-    min-height: 170px;
+  .about-social-preview-tiktok {
+    min-height: 600px;
+  }
+}
+
+@media (max-width: 520px) {
+  .about-social {
+    margin-top: 56px;
+    padding-top: 26px;
+  }
+
+  .about-social-panel {
+    padding: 13px;
+  }
+
+  .about-social-panel-heading {
+    gap: 8px;
+  }
+
+  .about-social-panel-heading h4 {
+    font-size: 18px;
   }
 }
 
