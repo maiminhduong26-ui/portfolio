@@ -412,4 +412,56 @@ window.PROJECTS = [
       },
     ],
   },
+
+  {
+    id: "corness",
+    number: "07",
+    title: "CORNESS — Lót ly sinh thái & Workshop du lịch nông nghiệp tuần hoàn",
+    period: "10/2026",
+    eyebrow: "Team Leader",
+    category: "Circular Economy · Sustainable Product · Agritourism",
+    year: "10/2026",
+    showOnHome: false,
+    tags: ["Circular Economy", "Eco-product", "Agritourism", "AI"],
+
+    shortDescription:
+      "Mô hình kinh tế tuần hoàn biến phế phẩm nông nghiệp thành lót ly sinh thái, kết hợp workshop du lịch nông nghiệp do người dân địa phương hướng dẫn.",
+
+    heroDescription:
+      "Sáng lập mô hình CORNESS và dẫn dắt nhóm 5 thành viên đạt Giải Vàng tại Hội nghị Khởi nghiệp Sinh viên Quốc tế Global UNIFORCE 2026 ở Jeju, Hàn Quốc.",
+
+    overview:
+      "CORNESS chuyển hóa lõi ngô và bã quýt Jeju thành đế lót ly sinh thái có khả năng kháng nước, chịu nhiệt, đồng thời kết hợp workshop trải nghiệm du lịch nông nghiệp do người dân địa phương trực tiếp hướng dẫn. Dự án đạt Giải Vàng (Gold Award) tại Hội nghị Khởi nghiệp Sinh viên Quốc tế Global UNIFORCE 2026.",
+
+    challenge:
+      "Tìm cách biến phụ phẩm nông nghiệp thành sản phẩm có giá trị thương mại, đồng thời tạo thêm trải nghiệm du lịch và nguồn thu ngoài mùa vụ cho cộng đồng nông dân địa phương.",
+
+    insight:
+      "Lõi ngô và bã quýt Jeju có thể trở thành nguyên liệu cho sản phẩm hữu ích; câu chuyện về nguồn gốc nông sản và người làm ra sản phẩm cũng có thể mở rộng thành trải nghiệm du lịch có sự tham gia của cộng đồng.",
+
+    strategy:
+      "Ứng dụng khung đổi mới sáng tạo NABC và tư duy thiết kế (Design Thinking) để nghiên cứu thực địa, phát triển sản phẩm và điều chỉnh mô hình từ bối cảnh Việt Nam sang mô hình kết hợp quốc tế tại Đảo Jeju. Kế hoạch kinh doanh tích hợp bốn dòng doanh thu, mô hình tài chính bằng USD và chiến lược định giá hướng đến điểm hòa vốn trong sáu tháng. Trải nghiệm số được hỗ trợ bởi Mã QR Căn cước Sản phẩm và Trợ lý AI CORA điều khiển bằng giọng nói.",
+
+    roles: [
+      "Lãnh đạo nhóm 5 thành viên và điều phối quá trình chuẩn bị qua 4 vòng thuyết trình quốc tế.",
+      "Xây dựng kế hoạch kinh doanh, mô hình tài chính với 4 dòng doanh thu bằng USD và chiến lược định giá; mô hình hướng đến hòa vốn trong 6 tháng.",
+      "Ứng dụng NABC và Design Thinking trong nghiên cứu thực địa, phát triển giải pháp và điều chỉnh mô hình cho bối cảnh Jeju.",
+      "Định hướng tích hợp Mã QR Căn cước Sản phẩm và Trợ lý AI CORA bằng giọng nói để cá nhân hóa trải nghiệm khách hàng.",
+    ],
+
+    process: [
+      "Nghiên cứu phế phẩm nông nghiệp và bối cảnh du lịch nông nghiệp tại Việt Nam, xác định cơ hội phát triển sản phẩm và dịch vụ trải nghiệm.",
+      "Phát triển lót ly từ lõi ngô và bã quýt Jeju, hướng đến các đặc tính kháng nước và chịu nhiệt.",
+      "Thiết kế workshop do người dân địa phương trực tiếp hướng dẫn, kết nối sản phẩm với trải nghiệm du lịch nông nghiệp.",
+      "Hoàn thiện mô hình kinh doanh, bốn dòng doanh thu, định giá và mô hình tài chính bằng USD.",
+      "Tích hợp ý tưởng Mã QR Căn cước Sản phẩm và Trợ lý AI CORA; thuyết trình giải pháp qua bốn vòng thi quốc tế.",
+    ],
+
+    results: [
+      "Đạt Giải Vàng (Gold Award) tại Hội nghị Khởi nghiệp Sinh viên Quốc tế Global UNIFORCE 2026, Jeju, Hàn Quốc.",
+      "Mô hình hướng đến tái chế 100% phụ phẩm nông nghiệp được sử dụng làm nguyên liệu.",
+      "Tác động mục tiêu: góp phần giảm 50% lượng phát thải khói bụi do đốt đồng.",
+      "Tác động mục tiêu: tăng 15–20% thu nhập ngoài mùa vụ cho nông dân địa phương.",
+    ],
+  },
 ];
