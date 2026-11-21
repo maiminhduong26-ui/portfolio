@@ -389,7 +389,10 @@ function renderProjectCards() {
 
     projectCards
       .sort((left, right) => startMonth(right) - startMonth(left))
-      .forEach((card) => experienceShowcase.append(card));
+      .forEach((card, index) => {
+        card.classList.toggle("is-reverse", index % 2 === 1);
+        experienceShowcase.append(card);
+      });
   }
 }
 
