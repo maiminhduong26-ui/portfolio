@@ -3543,3 +3543,140 @@ button {
     max-height: 300px;
   }
 }
+
+
+/* =========================
+   WAO UNIVERSE CASE STUDY
+========================= */
+.case-hero-art-wao-universe {
+  position: relative;
+  overflow: hidden;
+  color: #f7f3e6;
+  background:
+    radial-gradient(ellipse at 75% 25%, rgba(205, 177, 98, 0.3), transparent 32%),
+    radial-gradient(ellipse at 18% 80%, rgba(117, 159, 121, 0.28), transparent 38%),
+    linear-gradient(145deg, #183f38 0%, #0e2d2b 55%, #172a27 100%);
+}
+
+.case-hero-art-wao-universe::before,
+.case-hero-art-wao-universe::after {
+  position: absolute;
+  content: "";
+  border: 1px solid rgba(238, 221, 163, 0.38);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.case-hero-art-wao-universe::before {
+  width: 72%;
+  aspect-ratio: 1;
+  top: 8%;
+  right: -10%;
+}
+
+.case-hero-art-wao-universe::after {
+  width: 48%;
+  aspect-ratio: 1;
+  top: 21%;
+  right: 3%;
+}
+
+.case-hero-art-wao-universe > span {
+  color: rgba(247, 243, 230, 0.7);
+}
+
+.case-hero-art-wao-universe > strong {
+  max-width: 560px;
+  font-size: clamp(48px, 6vw, 88px);
+  line-height: 0.98;
+}
+
+.website-demo-section {
+  background: var(--bg);
+}
+
+.website-demo-heading {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 36px;
+  margin-bottom: 32px;
+}
+
+.website-demo-heading .case-title {
+  max-width: 620px;
+  margin-top: 12px;
+  font-size: clamp(34px, 4vw, 56px);
+  line-height: 1.08;
+}
+
+.website-demo-heading > p {
+  max-width: 390px;
+  margin: 0 0 4px;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.75;
+}
+
+.website-demo-frame {
+  width: 100%;
+  height: min(78vh, 760px);
+  min-height: 560px;
+  overflow: hidden;
+  border: 1px solid var(--border-strong);
+  background: #fff;
+  box-shadow: 0 22px 60px rgba(34, 52, 73, 0.12);
+}
+
+.website-demo-frame iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  background: #fff;
+}
+
+.website-demo-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 22px;
+}
+
+.website-demo-actions .btn {
+  border-radius: 2px;
+  font-size: 11px;
+  letter-spacing: 0.05em;
+}
+
+.website-demo-actions svg {
+  width: 15px;
+}
+
+@media (max-width: 820px) {
+  .website-demo-heading {
+    align-items: start;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .website-demo-frame {
+    height: 70vh;
+    min-height: 480px;
+  }
+}
+
+@media (max-width: 520px) {
+  .website-demo-frame {
+    height: 68vh;
+    min-height: 420px;
+  }
+
+  .website-demo-actions {
+    display: grid;
+  }
+
+  .website-demo-actions .btn {
+    width: 100%;
+  }
+}
