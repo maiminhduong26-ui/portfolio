@@ -571,7 +571,7 @@ window.PROJECTS = [
     ],
     mediaSections: [
       {
-        title: "Phóng sự · Hải Trình Tiếp Nối",
+        title: "Phóng sự \"Hải Trình Tiếp Nối\"",
         type: "youtube",
         layout: "full",
         items: [
