@@ -669,6 +669,24 @@ function makeMediaSections(project) {
                   `;
           }
 
+          if (section.type === "youtube") {
+            return `
+                    <figure class="media-card youtube-card">
+                      <div class="youtube-embed">
+                        <iframe
+                          src="https://www.youtube-nocookie.com/embed/${encodeURIComponent(item.youtubeId)}?rel=0&modestbranding=1"
+                          title="${escapeHTML(item.label || `YouTube video ${itemIndex + 1}`)}"
+                          loading="lazy"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                          referrerpolicy="strict-origin-when-cross-origin"
+                          allowfullscreen
+                        ></iframe>
+                      </div>
+                      ${item.label ? `<figcaption class="media-caption">${escapeHTML(item.label)}</figcaption>` : ""}
+                    </figure>
+                  `;
+          }
+
           if (section.type === "video") {
             return `
                     <figure
