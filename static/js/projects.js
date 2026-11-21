@@ -530,4 +530,59 @@ window.PROJECTS = [
     ],
   },
 
+  {
+    id: "hai-trinh-tiep-noi",
+    number: "09",
+    title: "Hải Trình Tiếp Nối",
+    period: "Video Phóng Sự · Đi Và Kể",
+    eyebrow: "Director of Photography (DOP)",
+    category: "Documentary · Cinematography · Visual Storytelling",
+    year: "2026",
+    showOnHome: false,
+    tags: ["DOP", "Cinematography", "Documentary", "Visual Storytelling"],
+    cover: "",
+    heroImage: "",
+    shortDescription: "Phóng sự chân dung về người ngư dân Mỹ Tân, hành trình kế nghiệp và sợi dây gắn bó nhiều thế hệ với biển.",
+    heroDescription: "Một câu chuyện về nghề biển, di sản gia đình và lựa chọn tiếp tục bám biển — được kể qua nhịp sống tại Cảng cá Mỹ Tân.",
+    overview: "“Hải Trình Tiếp Nối” là phóng sự chân dung thực hiện tại Cảng cá Mỹ Tân, theo chân một ngư dân trẻ và câu chuyện kế nghiệp nghề biển từ người cha. Tác phẩm nhìn nghề đi biển vừa là sinh kế nhiều nhọc nhằn, vừa là di sản gia đình và mối gắn bó với quê hương, vùng biển.",
+    challenge: "Ghi lại một nghề nhiều rủi ro và bấp bênh mà vẫn giữ được sự chân thực, gần gũi; đồng thời làm nổi bật tình cảm gia đình, niềm tự hào nghề nghiệp và ý nghĩa của việc tiếp tục hiện diện nơi vùng biển quê nhà.",
+    insight: "Nghề biển không chỉ được truyền lại bằng con thuyền hay kỹ năng, mà còn qua nếp sống, lời dặn của người cha và cảm thức thuộc về vùng biển quê hương.",
+    strategy: "Dùng ngôn ngữ hình ảnh quan sát để đưa khán giả từ nhịp cảng lúc bình minh đến những chi tiết lao động và cuộc trò chuyện giữa hai thế hệ. Kết hợp toàn cảnh, chuyển động tracking, cận cảnh bàn tay và gương mặt, phỏng vấn cùng âm thanh hiện trường để tạo cảm giác chân thực và giàu cảm xúc.",
+    roles: [
+      "Đảm nhận vai trò Director of Photography (DOP), chịu trách nhiệm ngôn ngữ hình ảnh và cách kể chuyện bằng khuôn hình.",
+      "Lựa chọn góc máy, cỡ cảnh và chuyển động máy phù hợp với từng nhịp nội dung: gimbal tracking, wide shot, medium shot, close-up và low angle.",
+      "Tổ chức ghi hình các chi tiết lao động, chân dung nhân vật, tương tác cha con và bối cảnh cảng cá theo shot list.",
+      "Khai thác ánh sáng tự nhiên theo thời điểm trong ngày, đặc biệt là bình minh và chiều tà; phối hợp hình ảnh với tiếng hiện trường và lời bình.",
+    ],
+    process: [
+      "Mở đầu bằng các khuôn hình cảng cá lúc tờ mờ sáng: cờ bay, tàu cập bến và chuyển động của ngư dân; ưu tiên ánh sáng sớm và gimbal tracking chậm.",
+      "Quan sát công việc tại bến qua các cỡ cảnh rộng, trung và cận: phân loại cá, vá lưới, bàn tay chai sạn và gương mặt rám nắng.",
+      "Dựng chân dung qua phỏng vấn người con và người cha, đan xen hình ảnh con thuyền, vật dụng nghề biển và những khoảnh khắc đời thường.",
+      "Tạo nhịp cảm xúc bằng đối lập giữa sự vất vả, bấp bênh của nghề với tình cảm gia đình, ký ức truyền nghề và niềm tự hào bám biển.",
+      "Khép lại bằng hình ảnh lá cờ, con tàu và hai thế hệ hướng nhìn ra biển, nối hành trình của người trẻ với di sản của cha ông.",
+    ],
+    results: [
+      "Đạt Giải Khuyến Khích tại cuộc thi Video Phóng Sự — “Đi Và Kể”.",
+      "Hoàn thiện phóng sự chân dung “Hải Trình Tiếp Nối” về người ngư dân và nghề biển tại Cảng cá Mỹ Tân.",
+      "Thể hiện vai trò DOP trong việc chuyển hóa shot list thành ngôn ngữ hình ảnh giàu quan sát và cảm xúc.",
+    ],
+    mediaSections: [
+      {
+        title: "Phóng sự · Hải Trình Tiếp Nối",
+        type: "youtube",
+        layout: "full",
+        items: [
+          {
+            youtubeId: "-LSF6iHe2m0",
+            label: "Video Phóng Sự — “Đi Và Kể”",
+          },
+        ],
+      },
+    ],
+    links: [
+      { label: "Xem video phóng sự trên YouTube", url: "https://youtu.be/-LSF6iHe2m0?si=LD5VacsEz-ylwaET" },
+      { label: "Tài liệu sản xuất & checklist góc quay", url: "https://drive.google.com/drive/folders/1nywxnMRUabT52qlniQ0RqIi5OeVG27ie?usp=drive_link" },
+    ],
+  },
+
 ];
