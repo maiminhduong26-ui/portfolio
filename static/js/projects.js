@@ -476,7 +476,7 @@ window.PROJECTS = [
       "Tác động mục tiêu: góp phần giảm 50% lượng phát thải khói bụi do đốt đồng.",
       "Tác động mục tiêu: tăng 15–20% thu nhập ngoài mùa vụ cho nông dân địa phương.",
     ],
-  },,
+  },
 
   {
     id: "wao-universe",
