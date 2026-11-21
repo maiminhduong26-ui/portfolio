@@ -175,42 +175,38 @@ function initMobileMenu() {
 function initActiveNavigation() {
   const links = [...document.querySelectorAll("[data-nav-link]")];
 
-  if (!links.length || !("IntersectionObserver" in window)) {
-    return;
-  }
+  if (!links.length) return;
 
-  const sections = links
-    .map((link) => {
-      const href = link.getAttribute("href");
+  const sectionLinks = links
+    .map((link) => ({
+      link,
+      section: document.querySelector(link.getAttribute("href")),
+    }))
+    .filter((item) => item.section)
+    .sort((a, b) =>
+      a.section.compareDocumentPosition(b.section) & Node.DOCUMENT_POSITION_FOLLOWING
+        ? -1
+        : 1,
+    );
 
-      return document.querySelector(href);
-    })
-    .filter(Boolean);
+  if (!sectionLinks.length) return;
 
-  const observer = new IntersectionObserver(
-    (entries) => {
-      const visible = entries
-        .filter((entry) => entry.isIntersecting)
-        .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+  const updateActiveLink = () => {
+    const header = document.querySelector("[data-header]");
+    const activationLine = (header?.getBoundingClientRect().height || 78) + 72;
+    const passed = sectionLinks.filter(
+      ({ section }) => section.getBoundingClientRect().top <= activationLine,
+    );
+    const activeItem = passed[passed.length - 1] || sectionLinks[0];
 
-      if (!visible) return;
+    links.forEach((link) => {
+      link.classList.toggle("is-active", link === activeItem.link);
+    });
+  };
 
-      links.forEach((link) => {
-        const active = link.getAttribute("href") === `#${visible.target.id}`;
-
-        link.classList.toggle("is-active", active);
-      });
-    },
-    {
-      rootMargin: "-30% 0px -55%",
-
-      threshold: [0.05, 0.2, 0.5],
-    },
-  );
-
-  sections.forEach((section) => {
-    observer.observe(section);
-  });
+  updateActiveLink();
+  window.addEventListener("scroll", updateActiveLink, { passive: true });
+  window.addEventListener("resize", updateActiveLink);
 }
 
 /* =========================
