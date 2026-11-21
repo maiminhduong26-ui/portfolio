@@ -526,6 +526,7 @@ window.PROJECTS = [
     links: [
       { label: "Mở website demo WAO Universe", url: "https://nguyenphatvn2005-svg.github.io/WAO-Tea-Coffee/" },
       { label: "Website chính thức WAO Tea Coffee", url: "https://waoteacoffee.com" },
+      { label: "Tài liệu & thông tin chi tiết dự án", url: "https://drive.google.com/drive/folders/1sE0WZqZyvlItNsmPS7TiGE42e1NYdrqv?usp=drive_link" },
     ],
   },
 
