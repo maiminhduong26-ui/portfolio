@@ -1161,6 +1161,42 @@ function renderProjectPage() {
       ${makeMediaSections(project)}
 
 
+      ${
+        project.websiteDemo
+          ? `
+            <section class="website-demo-section case-section reveal">
+              <div class="container">
+                <div class="website-demo-heading">
+                  <div>
+                    <p class="case-label">Interactive Demo / WAO Universe</p>
+                    <h2 class="case-title">${escapeHTML(project.websiteDemo.title)}</h2>
+                  </div>
+                  <p>${escapeHTML(project.websiteDemo.description)}</p>
+                </div>
+                <div class="website-demo-frame">
+                  <iframe
+                    src="${safeUrl(project.websiteDemo.url)}"
+                    title="Bản xem trước website WAO Universe"
+                    loading="lazy"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allow="fullscreen"
+                  ></iframe>
+                </div>
+                <div class="website-demo-actions">
+                  <a class="btn btn-primary" href="${safeUrl(project.websiteDemo.url)}" target="_blank" rel="noopener noreferrer">
+                    Mở bản demo đầy đủ <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+                  </a>
+                  <a class="btn btn-secondary" href="${safeUrl(project.websiteDemo.brandUrl)}" target="_blank" rel="noopener noreferrer">
+                    Website chính thức WAO Tea Coffee <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+                  </a>
+                </div>
+              </div>
+            </section>
+          `
+          : ""
+      }
+
+
       ${makeResultsSection(project)}
 
 
